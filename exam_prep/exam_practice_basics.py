@@ -77,7 +77,9 @@
 # 80
 # 62
 
-
+scores = {"Ali" : 55, "Bala" : 80, "Cindy" : 62}
+for mark in scores:
+    print(scores[mark])
 
 
 
@@ -87,8 +89,8 @@
 # Ali scored 55
 # Bala scored 80
 # Cindy scored 62
-
-
+for names in scores:
+    print(f"{names} scored {scores[names]}")
 
 
 #------------------------------------------------------------
@@ -173,12 +175,12 @@ marks = [55, 80, 62]
 # Exercise 11: Numbers Only
 # Keep asking user to enter age until input contains digits only.
 
-while True:
-    number = input("What is your age ") #77
+# while True:
+#     number = input("What is your age ") #77
 
-    if number.isdigit():
-        print(number)
-        break
+#     if number.isdigit():
+#         print(number)
+#         break
 
 
 
@@ -188,7 +190,11 @@ while True:
 # Exercise 12: Uppercase Only
 # Keep asking until user enters a code in uppercase letters only.
 
+# while True:
+#     user = input("What is your user ")
 
+#     if user.isupper():
+#         break
 
 
 
@@ -197,7 +203,11 @@ while True:
 # Exercise 13: Lowercase Only
 # Keep asking until user enters an email in lowercase only.
 
+# while True:
+#     user = input("What is your user ")
 
+#     if user.islower():
+#         break
 
 
 
@@ -206,7 +216,11 @@ while True:
 # Exercise 14: Password Validation
 # Keep asking until user enters a password with length >= 8.
 
+# while True:
+#     user = input("What is your user ")
 
+#     if len(user) >= 8:
+#         break
 
 
 
@@ -214,11 +228,22 @@ while True:
 
 # Exercise 15: Date Validation
 # Keep asking until user enters a date in format MM-YYYY.
-# Ensure the date is between 01-1900 and 09-2025.
+# Ensure the date is between 01-1900 and 12-2025.
 
 
 
 
+# while True:
+#     date = input("What is today's date (MM-YYYY) ")
+    
+#     if date.isdigit():
+#         if int(date[:2]) > 0 and int(date[:2]) <= 12 and int(date[-4:]) >= 1900 and int(date[-4:]) <= 2025:
+#             break
+#     elif len(date) == 7:
+#         if int(date[:2]) > 0 and int(date[:2]) <= 12 and int(date[-4:]) >= 1900 and int(date[-4:]) <= 2025:
+#             break
+#     else:
+#         print("Invalid date")      
 
 #------------------------------------------------------------
 # Adding to and Deleting from List
@@ -231,7 +256,14 @@ while True:
 # Expected Output:
 # [8, 12, 10]
 
+# even_numbers = []
+# numbers = [3, 8, 12, 7, 10]
 
+# for number in numbers:
+#     if number % 2 == 0:
+#         even_numbers.append(number)
+
+# print(even_numbers)
 
 
 
@@ -245,6 +277,15 @@ while True:
 
 
 
+
+# A_names = []
+
+# names = ["Ali", "Ben", "Amy", "John"]
+# for name in names:
+#     if name[0] == "A":
+#         A_names.append(name)
+
+# print(A_names)
 
 
 # ----------------------------------------------------------------
@@ -267,10 +308,14 @@ while True:
 # Expected Output:
 # [12, 20]
 
+numbers = [12, 7, 15, 20, 33]
 
+even_num = []
+for number in numbers:
+    if number % 2 == 0:
+        even_num.append(number)
 
-
-
+print(even_num)
 # ----------------------------------------------------------------
 
 # Exercise 20: Remove Names with 'x'
@@ -279,8 +324,14 @@ while True:
 # Expected Output:
 # ["Sam"]
 
+# names = ["Alex", "Max", "Sam"]
+# names2 = names
 
+# for i in names2:
+#     if "x" in i:
+#         names.remove(i)
 
+# print(names)
 
 
 # ----------------------------------------------------------------
