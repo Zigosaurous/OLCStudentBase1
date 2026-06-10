@@ -558,7 +558,11 @@ print(even_num)
 # Expected Output:
 # 20
 
+# def add(x,y):
+#     total = x + y
+#     print(total)
 
+# add(12,8)
 
 
 
@@ -570,18 +574,26 @@ print(even_num)
 # Expected Output:
 # 30.0
 
+# def average(lst):
+#     the_average = sum(lst) / len(lst)
+#     print(the_average)
 
+# average([10, 20, 30, 40, 50])
 
-
-
-# ----------------------------------------------------------------
 
 # Exercise 39: Reuse Function with List
-# Reuse your add(x, y) function.
 # Write a program that accepts a list of numbers and calculates total sum.
 # Example call: [5, 10, 15, 20]
 # Expected Output:
 # 50
+def total_sum(lst):
+    # add = x + y
+    # return add
+
+    total = sum(lst)
+    print(total)
+
+total_sum([5, 10, 15, 20])
 
 
 
@@ -596,7 +608,12 @@ print(even_num)
 # Expected Output:
 # 36 full boxes, 5 items leftover
 
+def pack_items(total_items, box_size):
+    boxes = total_items // box_size
+    leftover = total_items % box_size
+    print(f"{boxes} full boxes, {leftover} items leftover")
 
+pack_items(257,7)
 
 #------------------------------------------------------------
 # File I/O
@@ -607,11 +624,12 @@ print(even_num)
 # Expected Content (test.txt):
 # Hello Computing Students
 
-sentence = "Hello Computing Students"
+# sentence = "Hello Computing Students"
 
-# write this sentence to a file
+# # write this sentence to a file
 
-
+# with open("test.txt", "w") as file:
+#     file.write(sentence)
 
 # ----------------------------------------------------------------
 
@@ -620,7 +638,9 @@ sentence = "Hello Computing Students"
 # Expected Output:
 # Hello Computing Students
 
-
+# with open("test.txt", "r") as file:
+#     content = file.read()
+#     print(content)
 
 
 
@@ -631,3 +651,8 @@ sentence = "Hello Computing Students"
 # Ali
 # Bala
 # Cindy
+
+with open("name.txt", "w") as file:
+    file.write("Ali\n")
+    file.write("Bala\n")
+    file.write("Cindy\n")
