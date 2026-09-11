@@ -24,7 +24,7 @@ def prime(number):
             return "Not prime"
     
     return "Prime"  # All other even numbers are not prime
-    
+
 while True: # repeat asking for input if it is not valid 
     user_input = input("Please enter a whole number to check if it is prime: ")
     
