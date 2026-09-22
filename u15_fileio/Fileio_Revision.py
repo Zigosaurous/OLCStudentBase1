@@ -81,7 +81,10 @@
 
 # print(content)
 
+with open("q1_greeting.txt", "r") as greeting:
+    content = greeting.read()
 
+print(content)
 
 
 
@@ -108,8 +111,8 @@
 # Write your code below.
 # ---------------------------------------------------------
 
-# with open("q2_note.txt", "w") as file2:
-#     file2.write("Today I learnt how to write to a file.")
+with open("q2_note.txt", "w") as file2:
+    file2.write("Today I learnt how to write to a file.")
 
 
 
@@ -365,7 +368,24 @@ with open("proper_names.txt", "a") as proper_names:
 # Write your code below.
 # ---------------------------------------------------------
 
+# dictionary = {}
 
+# with open("q8_animal_names.txt", "r") as file1:
+#     content_name = file1.read()
+#     name_list = content_name.split(",")
+
+# # print(name_list)
+
+# with open("q8_animal_sounds.txt" , "r") as file2:
+#     content_sound = file2.read()
+#     sound_list = content_sound.split(",")
+
+# # print(sound_list)
+
+# for i in range(len(name_list)):
+#     dictionary[name_list[i]] = sound_list[i]
+
+# print(dictionary)
 
 
 
@@ -409,9 +429,39 @@ with open("proper_names.txt", "a") as proper_names:
 # Write your code below.
 # ---------------------------------------------------------
 
+# valid_scores = []
+# invalid_scores = []
+
+# with open("q9_scores.txt", "r") as file1:
+#     content = file1.readlines()
+
+# score_list = []
+
+# # print(content)
+# for score in content:
+#     score_list.append(score.strip("\n"))
+
+# # print(score_list)
+
+# for number in score_list:
+#     if number.isdigit() == False:
+#         invalid_scores.append(number)
+
+#     elif int(number) < 0:
+#         invalid_scores.append(number)
+#     elif int(number) > 100:
+#         invalid_scores.append(number)
+
+#     else:
+#         valid_scores.append(number)
 
 
+# print(invalid_scores)
+# print(valid_scores)
 
+# with open("invalid_scores.txt", "w") as file2:
+#     for num in invalid_scores:
+#         file2.write(num + "\n")
 
 
 
@@ -500,6 +550,29 @@ with open("proper_names.txt", "a") as proper_names:
 
 
 
+
+def read_sales():
+    sales_list = []
+
+    with open("q11_sales.txt", "r") as file1:
+        content = file1.readlines()
+
+    for i in content:
+        sales_list.append(i.strip("\n"))
+
+    item_list = []
+    quantity_list = []
+    price_list = []
+
+    for item in range(len(sales_list)):
+        item_list.append(item[0])
+        quantity_list.append(int(item[1]))
+        price_list.append(float(item[2]))
+
+    for 
+
+    # print(content)
+    # print(sales_list)
 
 
 
