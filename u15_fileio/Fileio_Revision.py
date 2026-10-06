@@ -282,18 +282,18 @@ with open("q2_note.txt", "w") as file2:
 # Write your code below.
 # ---------------------------------------------------------
 
-with open("q6_names.txt", "r") as names:
-    content = names.readlines()
+# with open("q6_names.txt", "r") as names:
+#     content = names.readlines()
 
-newlist = []
-for people in content:
-    name = people[0:1].upper() + people[1:]
-    newlist.append(name)
-    # list = newlist.append(name)
+# newlist = []
+# for people in content:
+#     name = people[0:1].upper() + people[1:]
+#     newlist.append(name)
+#     # list = newlist.append(name)
 
-with open("proper_names.txt", "a") as proper_names:
-    for n in newlist:
-        proper_names.write(n)
+# with open("proper_names.txt", "a") as proper_names:
+#     for n in newlist:
+#         proper_names.write(n)
 
 
 
@@ -551,28 +551,28 @@ with open("proper_names.txt", "a") as proper_names:
 
 
 
-def read_sales():
-    sales_list = []
+# def read_sales():
+#     sales_list = []
 
-    with open("q11_sales.txt", "r") as file1:
-        content = file1.readlines()
+#     with open("q11_sales.txt", "r") as file1:
+#         content = file1.readlines()
 
-    for i in content:
-        sales_list.append(i.strip("\n"))
+#     for i in content:
+#         sales_list.append(i.strip("\n"))
 
-    item_list = []
-    quantity_list = []
-    price_list = []
+#     item_list = []
+#     quantity_list = []
+#     price_list = []
 
-    for item in range(len(sales_list)):
-        item_list.append(item[0])
-        quantity_list.append(int(item[1]))
-        price_list.append(float(item[2]))
+#     for item in range(len(sales_list)):
+#         item_list.append(item[0])
+#         quantity_list.append(int(item[1]))
+#         price_list.append(float(item[2]))
 
-    for 
+#     for 
 
-    # print(content)
-    # print(sales_list)
+#     # print(content)
+#     # print(sales_list)
 
 
 
